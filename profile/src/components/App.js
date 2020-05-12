@@ -1,10 +1,13 @@
 import React from 'react';
-import '../styles/App.css';
+import '../styles/index.css';
 import { Provider } from 'react-redux'
 import store from '../redux/store'
-import Example from './Example'
+import Example from './Example';
+import profileName from './profileName';
+
+
 export default () => <div>
   <Provider store={store}>
-    <Example />
+    <profileName/>
   </Provider>
 </div>
