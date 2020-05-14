@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #root{
@@ -18,6 +20,30 @@ body{
 .profile{
     display: flex;
     width: 1280px;
+}
+
+.profileSection{
+    padding-right: 40px;
+}
+
+.avatar{
+    width: 272px;
+    height: 272px;
+    border-radius: 6px;
+}
+
+.avatarName{
+
+    font-size: 25px;
+    padding-top: 16px;
+
+}
+
+.userName{
+    font-size: 20px;
+    color: #666;
+    padding-bottom: 16px;
+
 }
 
 .navLi{
@@ -38,7 +64,7 @@ body{
 }
 
 .nav{
-    width: 90%;
+    width: 75%;
 }
 
 .findInput{
@@ -47,4 +73,45 @@ body{
     border-style: solid;
     border-radius: 5px;
     height: 30px;
+    margin-right: 8px;
 }
+
+.btn{
+  
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    vertical-align: middle;
+    cursor: pointer; 
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: .25em;
+    margin-right: 8px;
+    
+
+}
+
+.followBtn{
+   width: 100%;
+     padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    vertical-align: middle;
+    cursor: pointer; 
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: .25em;
+    margin-right: 8px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.location{
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.reportUser{
+    font-size: 14px;
+    margin-top: 4px;
+    color: #586069
+}
+
