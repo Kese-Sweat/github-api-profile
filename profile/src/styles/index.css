@@ -1,6 +1,50 @@
-.profilePic{
-    
-   background-image: url('http://placehold.it/250x250' );
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
 
+.profile{
+    display: flex;
+    width: 1280px;
+}
+
+.navLi{
+    margin-right: 55px;
+}
+
+.navBar{
+    display: flex;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.searchBar{
+    border-top-style: solid;
+    border-bottom: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav{
+    width: 90%;
+}
+
+.findInput{
+
+    width: 70%;
+    border-style: solid;
+    border-radius: 5px;
+    height: 30px;
 }

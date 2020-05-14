@@ -3,11 +3,17 @@ import '../styles/index.css';
 import { Provider } from 'react-redux'
 import store from '../redux/store'
 import Example from './Example';
-import profileName from './profileName';
+import Profile from './Profile';
+import Nav from './Nav';
 
 
-export default () => <div>
+
+
+export default () => <div className="profile">
   <Provider store={store}>
-    <profileName/>
+    <Profile />
+    <Nav />
+    
+
   </Provider>
 </div>
