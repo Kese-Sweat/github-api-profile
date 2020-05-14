@@ -8,9 +8,9 @@ function SearchBar () {
 
     return(
         <div className="searchBar">
-            <input className="findInput"></input>
-            <button className="btn">Type</button>
-            <button className="btn">Language</button>
+            <input className="findInput" placeholder="Find a repository..."></input>
+            <button className="btn">Type: All</button>
+            <button className="btn">Language: All</button>
             
 
 

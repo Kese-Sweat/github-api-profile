@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import Nav from './Nav'
+import { GoLocation } from "react-icons/go";
 
 
 function Profile () {
@@ -25,7 +26,7 @@ function Profile () {
     <span className="userName">{user.login}</span>
     <ul>
      <li><button className="followBtn">Follow</button></li>
-     <li className="location">{user.location}</li>
+     <li className="location"><GoLocation />{user.location}</li>
     </ul>
     <span className="reportUser">Block or report user</span>
     
