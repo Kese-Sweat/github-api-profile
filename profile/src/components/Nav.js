@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchBar from './SearchBar';
+import Respositories from './Repos';
 
 
 
@@ -19,6 +20,7 @@ function navBar () {
                 <li className="navLi">Following</li>
             </ul>
             <SearchBar />
+            <Respositories />
             
 
 

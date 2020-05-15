@@ -5,6 +5,7 @@ import store from '../redux/store'
 import Example from './Example';
 import Profile from './Profile';
 import Nav from './Nav';
+import Repositories from './Repos'
 
 
 

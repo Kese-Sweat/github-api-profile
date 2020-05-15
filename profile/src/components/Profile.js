@@ -6,12 +6,12 @@ import { GoLocation } from "react-icons/go";
 
 function Profile () {
     const [user, setUser] = useState({})
-    console.log(user)
+    
 
     useEffect(() => {
         axios.get('https://api.github.com/users/thomas1117').then(resp =>{
             setUser(resp.data)
-        console.log(resp.data)
+        
     })
 
    }, [])
