@@ -1,0 +1,1 @@
+export { useProfile } from "../redux/ducks/myProfile"
