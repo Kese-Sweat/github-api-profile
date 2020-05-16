@@ -7,8 +7,12 @@ import { useProfile } from "../hooks/profile"
 
 
 function Respositories ()  {
-    const {getRepos} = useProfile()
-    console.log(getRepos)
+    const {getRepos, repos} = useProfile()
+    console.log(repos)
+
+    useEffect(() => {
+        getRepos()
+    }, [])
 
     
 

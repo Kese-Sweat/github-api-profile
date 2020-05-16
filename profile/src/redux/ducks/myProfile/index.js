@@ -2,43 +2,42 @@ import { useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"              
 import axios from "axios"
 
-const PROFILE_ACTION = "myProfile/PROFILE_ACTION"
+const GET_REPOS = "myProfile/GET_REPOS"
 
 const initialState = {
-    myProfile: "profile",
+    repos: [],
+    profile: {},
 }
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case PROFILE_ACTION:
-            return { ...state, myProfile: action.payload } // This is returning a new state of the app
+        case GET_REPOS:
+            return { ...state, repos: action.payload } // This is returning a new state of the app
         default:
             return state // Make sure to return the state of the app after return a new state
 
     }
 }
 
-function getRepos() { // this will be a async action
+function getReposData() { // this will be a async action
     return dispatch => {
         axios.get('https://api.github.com/users/thomas1117/repos').then(resp =>{
             dispatch({
-                type: PROFILE_ACTION,
+                type: GET_REPOS,
                 payload: resp.data
             })
         })
     }
 }
 
-export function useProfile (){
+export function useProfile () {
     const dispatch = useDispatch()
-    const myProfile = useSelector(appState => appState.profileState.myProfile)
+    const repos = useSelector(appState => appState.profileState.repos)
 
-    const getRepos = () => dispatch(getRepos())
+    const getRepos = () => dispatch(getReposData())
 
-    useEffect(() => {
-        
-      }, [])
+   
 
-    return { getRepos }
+    return { getRepos, repos }
 
 }
