@@ -29,7 +29,7 @@ return(<div>
             <span className="language">{item.language}</span>
             </div>
         <div>
-            <button className="starButton"><AiFillStar/>Star</button>
+            <button className="starButton"><AiFillStar size={15}/>Star</button>
         </div>
 
             </li>
