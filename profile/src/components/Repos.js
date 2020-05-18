@@ -25,7 +25,7 @@ return(<div>
         return <div className="repoItems">
             <li className="repoList">
                 <div>
-            <h3 key={item.name}>{item.name}</h3>
+            <h3 key={item.name} onClick={() => getRepos(item.html_url)}>{item.name}</h3>
             <span className="language">{item.language}</span>
             </div>
         <div>
