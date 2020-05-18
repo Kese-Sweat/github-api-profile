@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { useProfile } from "../hooks/profile"
+import { AiFillStar } from 'react-icons/ai'
 
 
 
@@ -19,7 +20,26 @@ function Respositories ()  {
     
 
 return(<div>
+    <ul>
+    {repos.map(item => {
+        return <div className="repoItems">
+            <li className="repoList">
+                <div>
+            <h3 key={item.name}>{item.name}</h3>
+            <span className="language">{item.language}</span>
+            </div>
+        <div>
+            <button className="starButton"><AiFillStar/>Star</button>
+        </div>
+
+            </li>
+        </div>
+        
+
+        
     
+    })}
+    </ul>
 
 </div>
 
